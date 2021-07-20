@@ -1,0 +1,18 @@
+@import-normalize ;
+
+html {
+    display: block;
+    width: 100%;
+}
+
+body {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+#root {
+    display: block;
+    width: 100%;
+    margin: 0;
+}

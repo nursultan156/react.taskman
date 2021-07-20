@@ -1,12 +1,31 @@
 import React from "react";
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Link,
+    Redirect
+} from "react-router-dom";
+import "./App.css";
+import MainPage from "../pages/HomePage";
+import LoginPage from "../pages/LoginPage";
+
 
 export default class App extends React.Component {
 
-    render(){
-        return(
-            <div>Hello</div>
+    render() {
+        return (
+            <Router>
+                <Route exact path="/" component={MainPage}/>
+                <Route exact path="/login" component={LoginPage}/>
+            </Router>
         );
     }
 
 }
+
+// 1 страница кнопка логин(войти/выйти) + таблица
+// 2 страница только логин
+// 3 страница создание задачи
+// 4 страница редактирование задачи
 
