@@ -7,7 +7,7 @@ import {
     Redirect
 } from "react-router-dom";
 import "./App.css";
-import MainPage from "../pages/HomePage";
+import HomePage from "../pages/HomePage";
 import LoginPage from "../pages/LoginPage";
 
 
@@ -16,7 +16,7 @@ export default class App extends React.Component {
     render() {
         return (
             <Router>
-                <Route exact path="/" component={MainPage}/>
+                <Route exact path="/" component={HomePage}/>
                 <Route exact path="/login" component={LoginPage}/>
             </Router>
         );
