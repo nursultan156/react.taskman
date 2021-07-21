@@ -1,6 +1,7 @@
-.auth-col {
+.auth-wrapper {
     background: rgba(0, 0, 0, 0.05);
     line-height: 32px;
     border: 1px solid black;
-    margin-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
