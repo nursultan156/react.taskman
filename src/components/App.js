@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import HomePage from "../pages/HomePage";
+import TaskAddPage from "../pages/TaskAddPage";
+import TaskEditPage from "../pages/TaskEditPage";
 import LoginPage from "../pages/LoginPage";
 
 
@@ -17,6 +19,8 @@ export default class App extends React.Component {
         return (
             <Router>
                 <Route exact path="/" component={HomePage}/>
+                <Route exact path="/add" component={TaskAddPage}/>
+                <Route exact path="/edit" component={TaskEditPage}/>
                 <Route exact path="/login" component={LoginPage}/>
             </Router>
         );
